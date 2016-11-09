@@ -40,7 +40,7 @@ body {
   color: #ffffff;
 }
 
-.__banner .banner__inner h2 {
+.__banner .banner__inner h2 h3 {
   margin-bottom: 25px;
   text-align: center;
   letter-spacing: 3px;
@@ -49,6 +49,9 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   color: #ffffff;
+}
+h3 {
+  font-size: 32px;
 }
 
 .__banner .banner__inner p,
