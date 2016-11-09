@@ -18,3 +18,9 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+
+Route.get('/user', 'UserController.index')
+// Route.get('/user', function * (request, response) {
+//     const email = request.param('email')
+//     response.send('testing ${email}')
+// })

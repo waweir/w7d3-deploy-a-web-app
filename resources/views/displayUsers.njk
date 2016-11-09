@@ -1,0 +1,29 @@
+{% extends 'users' %}
+
+{% block displayUsers %}
+  <div class="container">
+    <div class="row">
+      <h1>Users</h1>
+    </div>
+    <div class="row">
+      <table class="table table-hover">
+          <tbody>
+              <thead>
+                  <th>Id</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+              </thead>
+              {% for user in users %}
+              <tr>
+                  <td>{{ user.id }}</td>
+                  <td>{{ user.first_name }}</td>
+                  <td>{{ user.last_name }}</td>
+                  <td>{{ user.email }}</td>
+              </tr>
+              {% endfor %}
+          </tbody>
+      </table>
+    </div>
+  </div>
+{% endblock %}
