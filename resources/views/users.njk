@@ -17,9 +17,11 @@
   <section>
     <div class="__wrapper">
       <div class="__banner">
-      {% block displayUsers %}{% endblock %}
+        <div class="banner__inner">
+        {% block displayUsers %}{% endblock %}
+        </div>
       </div>
-      
+
       {% block footer %}
         <div class="__footer">
           <ul>
