@@ -8,6 +8,7 @@ class ChatsTableSchema extends Schema {
     this.create('chats', (table) => {
       table.increments()
       table.string('message')
+      table.string('image')
       table.timestamps()
     })
   }
