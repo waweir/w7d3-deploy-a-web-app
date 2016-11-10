@@ -14,7 +14,7 @@ module.exports = {
   | interacting with SQL databases.
   |
   */
-  connection: Env.get('DB_CONNECTION', 'pg'),
+  connection: Env.get('DB_CONNECTION', 'sqlite'),
 
   /*
   |--------------------------------------------------------------------------
@@ -65,15 +65,20 @@ module.exports = {
   | npm i --save pg
   |
   */
+  // pg: {
+  //   client: 'pg',
+  //   connection: {
+  //     host: Env.get('DB_HOST', 'localhost'),
+  //     user: Env.get('DB_USER', 'root'),
+  //     password: Env.get('DB_PASSWORD', ''),
+  //     database: Env.get('DB_DATABASE', 'adonis'),
+  //     ssl: true
+  //   }
+  // }
+
   pg: {
     client: 'pg',
-    connection: {
-      host: Env.get('DB_HOST', 'localhost'),
-      user: Env.get('DB_USER', 'root'),
-      password: Env.get('DB_PASSWORD', ''),
-      database: Env.get('DB_DATABASE', 'adonis'),
-      ssl: true
-    }
+    connection: Env.get('DATABASE_URL')
   }
 
 }

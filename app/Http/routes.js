@@ -20,3 +20,15 @@ const Route = use('Route')
 Route.on('/').render('welcome')
 
 Route.get('/user', 'UserController.index')
+
+Route.resource('/blog', 'BlogController')
+
+
+
+
+
+
+
+
+
+//

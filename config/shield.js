@@ -80,10 +80,11 @@ module.exports = {
   | routes does have a valid token to execute an action.
   |
   */
+  // cross site request forgery 
   csrf: {
     enable: true,
     methods: ['POST', 'PUT', 'DELETE'],
-    filterUris: [],
+    filterUris: ['/chats', '/blog'],
     compareHostAndOrigin: true
   }
 
