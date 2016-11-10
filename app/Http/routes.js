@@ -17,11 +17,14 @@
 
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+Route.resource('/chats', 'ChatsController')
 
-Route.get('/user', 'UserController.index')
+// Route.on('/').render('welcome')
+//
+// Route.get('/user', 'UserController.index')
+//
+// Route.resource('/blog', 'BlogController')
 
-Route.resource('/blog', 'BlogController')
 
 
 

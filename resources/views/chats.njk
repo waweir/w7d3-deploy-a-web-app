@@ -1,0 +1,20 @@
+{% extends 'master-chats' %}
+
+{% block chat %}
+<div class="container">
+  {{ form.open({action: 'ChatController.store'}) }}
+
+    {{ csrfField }}
+
+    <div class="form-group">
+      {{ form.label('body', 'Post') }}
+      {{ form.textarea('body', '', {class: 'form-control'}) }}
+    </div>
+
+    <div class="form-group">
+      {{ form.submit('Chat', '', {class: 'btn btn-default'}) }}
+    </div>
+
+  {{ form.close() }}
+</div>
+{% endblock %}
