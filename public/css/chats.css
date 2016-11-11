@@ -35,3 +35,32 @@ p {
 .hidden {
   display: none;
 }
+
+#messages iframe, #messages .placeholder {
+  width: 90px;
+  height: 90px;
+}
+
+#messages iframe img, #messages .placeholder img {
+  width: 100%;
+}
+
+#messages .chat_display:first-child {
+  flex: 2;
+}
+
+#messages .chat_display:last-child {
+  flex: 1;
+}
+
+#messages .list-group-item {
+  border: none;
+  border-radius: 0;
+  border-left: 10px solid #41d3bd;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 2px #9bc1bc;
+}
+
+#image {
+  margin-bottom: 20px;
+}

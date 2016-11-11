@@ -23,6 +23,9 @@
     "adonis-lucid": "^3.0.10",
     "adonis-middleware": "^1.0.8",
     "pg": "^6.1.0",
+    "pusher": "^1.5.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
     "sqlite3": "^3.1.8",
     "standard": "^8.4.0",
     "youch": "^1.0.1"

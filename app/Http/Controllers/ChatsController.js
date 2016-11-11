@@ -33,7 +33,7 @@ class ChatsController {
 
     var chat = new Chat()
     chat.message = message
-    chat.image = iamge
+    chat.image = image
     yield chat.save()
     response.json(true)
 

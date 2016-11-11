@@ -33,5 +33,36 @@ p {
 .hidden {
     display: none;
 }
+#messages {
+    iframe, .placeholder {
+        width: 90px;
+        height: 90px;
+        img {
+            width: 100%;
+        }
+    }
+    .chat_display {
+        &:first-child {
+            flex: 2
+        }
+        &:last-child {
+            flex: 1;
+        }
+    }
+    .list-group-item {
+        border: none;
+        border-radius: 0;
+        border-left: 10px solid $teal;
+        margin-bottom: 10px;
+        box-shadow: 2px 2px 2px $lightBlue;
+    }
+}
+#image {
+    margin-bottom: 20px;
+}
+
+
+
+
 
 //
