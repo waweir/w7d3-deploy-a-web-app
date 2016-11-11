@@ -11,12 +11,12 @@ function returnGif() {
 }
 
 input.addEventListener('keypress', function(e) {
-  if (e.key === 'Enter') {
+  if (e.keyCode === 13) {
     submitChat()
   }
 })
 image.addEventListener('keypress', function(e) {
-  if (e.key === 'Enter') {
+  if (e.keyCode === 13) {
     submitChat()
   }
 })
