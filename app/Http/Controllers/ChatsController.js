@@ -28,7 +28,8 @@ class ChatsController {
     })
 
     pusher.trigger('chat_app', 'new_chat', {
-      message: message
+      message: message,
+      image: image
     })
 
     var chat = new Chat()
